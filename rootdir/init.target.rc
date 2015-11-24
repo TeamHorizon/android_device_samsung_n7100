@@ -39,6 +39,10 @@ on post-fs-data
     chown system radio /sys/class/sensors/ssp_sensor/ori_poll_delay
     chown system radio /sys/class/sensors/ssp_sensor/mag_poll_delay
 
+on fs
+    # zram
+    swapon_all /fstab.smdk4x12
+
 on boot
 
 # cbd
